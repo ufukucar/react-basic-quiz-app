@@ -2,37 +2,81 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main__div,
+.quiz__div,
+.final__div {
+  background-color: rgb(25, 72, 115);
+  width: 500px;
+  min-height: 250px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main__div h1 {
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main__div button {
+  padding: 20px;
+  color: #fff;
+  background-color: rgb(7, 20, 31);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz__div p.soru {
+  color: #fff;
+  font-size: 18px;
+
+}
+
+.quiz__div .cevaplar {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+  width: 85%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.quiz__div .cevaplar button,
+.sonrakiSoru,
+.restartGame {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 90%;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sonrakiSoru,
+  {
+  max-width: 76%;
+  margin-bottom: 50px;
+
+}
+
+p.sonuc {
+  color: #fff;
+  font-size: 24px;
+  ;
+}
+
+.restartGame {
+  max-width: 76%;
+  margin-bottom: 50px;
+  background-color: rgb(7, 20, 31);
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 18px;
+
 }
